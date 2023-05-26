@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   MDBContainer,
   MDBNavbar,
@@ -6,13 +6,10 @@ import {
   MDBBtn,
 } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-
 
 
 export default function App() {
   
-
   return (
     <MDBNavbar light bgColor="light">
       <MDBContainer fluid>
@@ -21,7 +18,7 @@ export default function App() {
           <Link to="/">All Product </Link>
         </span>
         <MDBBtn color="light">
-          <Link to="/cart">Cart()</Link>
+          <Link to="/cart">Cart</Link>
         </MDBBtn>
       </MDBContainer>
     </MDBNavbar>
