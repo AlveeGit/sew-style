@@ -52,14 +52,14 @@ const productData = [
     },
     {
       id: 7,
-      title: "Sweatshirt",
+      title: "Tops",
       price: 250.0,
       img: product7,
       quantity: 1,
     },
     {
       id: 8,
-      title: "Tops",
+      title: "Sweatshirt",
       price: 150.0,
       img: product8,
       quantity: 1,
