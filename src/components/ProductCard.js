@@ -12,6 +12,7 @@ import {
 } from "mdb-react-ui-kit";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../features/cartSlice";
+import "./ProductCard.css";
 
 export default function App() {
   const items = useSelector((state) => state.allCart.items);
@@ -24,8 +25,13 @@ export default function App() {
         <MDBRow className="mb-3">
           {items.map((item) => (
             <MDBCol key={item.id} size="md">
-              <MDBCard>
-                <MDBCardImage src={item.img} position="top" alt="..." />
+              <MDBCard className="h-100">
+                <MDBCardImage
+                  src={item.img}
+                  position="top"
+                  alt="..."
+                  height={"300px"}
+                />
                 <MDBCardBody>
                   <MDBCardTitle>{item.title}</MDBCardTitle>
                   <MDBCardText>{item.price}</MDBCardText>
